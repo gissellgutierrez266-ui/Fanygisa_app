@@ -1,9 +1,9 @@
-name: fanysisa_app
+name: fanygisa_app
 description: Aplicación Flutter para gestión de áreas y perfiles
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -16,3 +16,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
