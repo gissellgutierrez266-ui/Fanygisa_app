@@ -2,7 +2,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.example.fanysisa_app"
+        applicationId "com.example.fanygisa_app"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
