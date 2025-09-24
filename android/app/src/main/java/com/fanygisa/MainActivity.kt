@@ -1,4 +1,4 @@
-package com.fanysisa
+package com.fanygisa
 
 import io.flutter.embedding.android.FlutterActivity
 
