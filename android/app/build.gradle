@@ -1,8 +1,11 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
 android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.example.fanygisa_app"
+        applicationId "com.googleuser426.fanygisa.fanygisa.fanygisa"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
@@ -11,8 +14,9 @@ android {
 
     buildTypes {
         release {
-            shrinkResources false
             minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }
