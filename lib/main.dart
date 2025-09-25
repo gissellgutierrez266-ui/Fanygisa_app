@@ -102,3 +102,35 @@ class MyApp extends StatelessWidget {
 );
 }
 }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CoreProvider()),
+        // Agrega más proveedores si los tienes
+      ],
+      child: FanygisaApp(),
+    ),
+  );
+}
+
+class FanygisaApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Fanygisa',
+      theme: ThemeData(primarySwatch: Colors.purple),
+      initialRoute: '/question',
+      routes: {
+        '/question': (context) => const QuestionScreen(),
+        '/result': (context) => const ResultScreen(),
+        '/error': (context) => const ErrorScreen(),
+      },
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
