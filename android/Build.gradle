@@ -2,7 +2,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.googleuser26.fanygisa.fanygisa.fanygisa"
+        applicationId "com.googleuser426.fanygisa.fanygisa.fanygisa"
         minSdkVersion 24
         targetSdkVersion 33
         versionCode 1
